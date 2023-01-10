@@ -73,6 +73,9 @@
   <article class="markdown">
     <h1 class="title">{{ partial "docs/title.html" . }}</h1>
     {{partial "quartz/textprocessing" . }}
+    {{if $.Site.Params.enableRecentNotes}}
+      {{partial "quartz/recent" . }}
+    {{end}}
     {{ partial "quartz/footer" .}}
     {{/*  {{- .Content -}}  */}}
   </article>
