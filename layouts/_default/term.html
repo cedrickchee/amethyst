@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="markdown">
+  {{/* <h1 class="title">{{ partial "docs/title.html" . }}</h1> */}}
+  <h1>{{ i18n "tag" }}: {{ .Title }}</h1>
+  {{with .Params.description}}
+      <p>{{.}}</p>
+  {{end}}
+  {{partial "quartz/page-list" .Paginator.Pages}}
+  {{ template "_internal/pagination.html" . }}
+</article>
+{{ end }}
