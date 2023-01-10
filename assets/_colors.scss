@@ -1,3 +1,5 @@
+// Custom defined styles for Amethyst
+
 :root {
     --light: #faf8f8;
     --dark: #141021;
@@ -8,8 +10,8 @@
     --gray: #3f3f3f;
     --lightgray: #f0f0f0;
     --outlinegray: #dadada;
-    --million-progress-bar-color: var(--secondary);
-    --highlighted: #8446ff88;
+    --highlighted: #8446ff88; // original value: #f5dfaf88
+    // Variables for hugo-book
     --header: #bca1ff;
     --title: rgb(55, 0, 255);
     --scrollbar: gray;
@@ -27,6 +29,7 @@
     --lightgray: #292633 !important;
     --outlinegray: #343434 !important;
     --highlighted: #574010;
+    // Variables for hugo-book
     --header: #7838f8;
     --title: rgb(253, 116, 253);
     --scrollbar: rgb(177, 177, 177);
