@@ -166,6 +166,8 @@ const registerHandlers = (onInputFn) => {
     }
   })
 
+  // We changed the selector because now we have two search buttons — on header
+  // and on hamburger menu (mobile layout).
   const searchButtons = document.getElementsByClassName("quartz-search")
   for (let searchButton of searchButtons) {
 
