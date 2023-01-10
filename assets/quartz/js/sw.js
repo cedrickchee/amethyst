@@ -1,3 +1,8 @@
+/**
+ * This JS is not part of Quartz originally.
+ * The JS came from hugo-book.
+ */
+
 const cacheName = self.location.pathname
 const pages = [
 {{ if eq .Site.Params.BookServiceWorker "precache" }}
