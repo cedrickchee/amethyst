@@ -1,5 +1,10 @@
 public/
 exampleSite/public/
 .DS_Store
-.hugo_build.lock
 themes
+
+resources
+content/.obsidian
+assets/indices/linkIndex.json
+assets/indices/contentIndex.json
+linkmap
