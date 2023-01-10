@@ -206,6 +206,7 @@ article {
 .tags {
   list-style: none;
   padding-left: 0;
+  padding-inline-start: 0 !important; // fix
 
   & .meta {
     margin: 1.5em 0;
