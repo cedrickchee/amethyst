@@ -243,6 +243,11 @@ body[dir="rtl"] .book-menu {
     width: 1em;
   }
 
+  nav {
+    border-left: 1px solid var(--outlinegray);
+    padding-left: 0.5em;
+  }
+
   nav > ul > li:first-child {
     margin-top: 0;
   }
