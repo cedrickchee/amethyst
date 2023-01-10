@@ -253,7 +253,7 @@ sup > a {
 
 a {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 400; // original value: 700
   text-decoration: none;
   transition: all 0.2s ease;
   color: var(--secondary);
