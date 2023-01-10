@@ -1,6 +1,6 @@
-<!-- set data/config yaml file based on website language -->
-{{/*  {{ $config := cond (eq $.Site.Language.Lang "en") "config" (printf "config.%s" $.Site.Language.Lang) }}  */}}
-{{ $data := $.Site.Params }}
+<!-- set config yaml file based on website language -->
+{{ $config := cond (eq $.Site.Language.Lang "en") "config" (printf "config.%s" $.Site.Language.Lang) }}
+{{ $data := index $.Site.Params $config }}
 <!-- Contact Info -->
 <div id="contact_buttons">
     <footer>
