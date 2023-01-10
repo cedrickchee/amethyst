@@ -1,0 +1,216 @@
+# hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
+
+baseURL = "https://garden.cedricchee.com/" #make sure it ends with trailing slash
+
+#
+# Quartz configuration
+#
+languageCode = "en-us"
+relativeURLs = false
+ignoreFiles = [
+    "/content/templates/*",
+    "/content/private/*"
+]
+summaryLength = 20
+paginate = 10
+# googleAnalytics = "G-XYFD95KB4J"
+
+# Needed for mermaid/katex shortcodes
+[markup]
+  [markup.tableOfContents]
+    endLevel = 6 # default is 3
+    ordered = false # default is true
+    startLevel = 1 # original value: 1
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  # Quartz specific
+  # [markup.highlight]
+  #   noClasses = false
+  #   anchorLineNos = false
+  #   codeFences = true
+  #   guessSyntax = true
+  #   hl_Lines = ""
+  #   lineAnchors = ""
+  #   lineNoStart = 1
+  #   lineNos = true
+  #   lineNumbersInTable = true
+  #   style = "dracula"
+  # Quartz specific
+  # [frontmatter]
+  #   lastmod = ["lastmod", ":git", "date", "publishDate"]
+  #   publishDate = ["publishDate", "date"]
+
+#
+# Book configuration
+#
+disablePathToLower = true
+enableGitInfo = true
+
+# Multi-lingual mode config
+# There are different options to translate files
+# See https://gohugo.io/content-management/multilingual/#translation-by-filename
+# And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+# [languages]
+# [languages.en]
+#   languageName = 'English'
+#   contentDir = 'content.en'
+#   weight = 1
+
+# Sidebar menu additional links
+# [[menu.before]]
+#   name = "Sample"
+#   url = "https://google.com"
+#   weight = 10
+
+[[menu.after]]
+  name = "Github"
+  url = "https://github.com/cedrickchee/amethyst"
+  weight = 10
+
+#
+# Data
+#
+[params]
+  name = "Cedric Chee"
+
+  #
+  # Quartz configuration - data
+  #
+  
+  title = "🪴 Cedric's Digital Garden" # 📓 Amethyst
+  
+  # Site description and title
+  description = "A single place for all Cedric's knowledge — second brain and digital garden."
+
+  # whether to display on-hover link preview cards
+  enableLinkPreview = true
+
+  # Don't change this
+  enableSPA = false
+
+  # Enable rendering of LaTeX blocks
+  # (surrounded by either single or double dollar signs)
+  enableLatex = false
+
+  # whether to render titles for code blocks
+  enableCodeBlockTitle = true
+
+  # whether to render copy buttons for code blocks
+  enableCodeBlockCopy = true
+
+  # whether to render callouts
+  enableCallouts = true
+
+  # Show footer, including backlinks and graph view
+  enableFooter = true
+
+  # whether backlinks of pages should show the context in which
+  # they were mentioned
+  enableContextualBacklinks = true
+
+  # whether to show a section of recent notes on the home page
+  enableRecentNotes = true # default is false
+
+  # whether to display an 'edit' button next to the last edited field
+  # that links to github
+  enableGitHubEdit = true # default is false
+  # Link to your Github repo
+  GitHubLink = "https://github.com/cedrickchee/amethyst"
+
+  # whether to render mermaid diagrams
+  enableMermaid = true
+
+  #
+  # Book configuration
+  #
+
+  # OPTIONAL: custom favicon location
+  # favicon = "location/to/favicon.png"
+
+  # (Optional, default true) Controls table of contents visibility on right side of pages.
+  # Start and end levels can be controlled with markup.tableOfContents setting.
+  # You can also specify this parameter per page in front matter.
+  BookToC = true
+
+  # (Optional, default none) Set the path to a logo for the book. If the logo is
+  # /static/logo.png then the path would be logo.png
+  # BookLogo = "/logo.png"
+
+  # (Optional, default none) Set leaf bundle to render as side menu
+  # When not specified file structure and weights will be used
+  # BookMenuBundle = "/menu"
+
+  # (Optional, default docs) Specify root page to render child pages as menu.
+  # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
+  # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
+  BookSection = "/"
+
+  # Set source repository location.
+  # Used for 'Last Modified' and 'Edit this page' links.
+  BookRepo = "https://github.com/cedrickchee/amethyst"
+
+  # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
+  # commit hash for 'doc' page type.
+  # Requires 'BookRepo' param.
+  # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
+  # Github uses 'commit', Bitbucket uses 'commits'
+  # BookCommitPath = "commit"
+
+  # Enable "Edit this page" links for 'doc' page type.
+  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
+  # Edit path must point to root directory of repo.
+  BookEditPath = "edit/main/exampleSite"
+
+  # Configure the date format used on the pages
+  # - In git information
+  # - In blog posts
+  BookDateFormat = "January 2, 2006"
+
+  # (Optional, default true) Enables comments template on pages
+  # By default partals/docs/comments.html includes Disqus template
+  # See https://gohugo.io/content-management/comments/#configure-disqus
+  # Can be overwritten by same param in page frontmatter
+  BookComments = false # default is true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
+  BookTranslatedOnly = false
+
+  # (Optional, default true) Enables search function with flexsearch,
+  # Index is built on fly, therefore it might slowdown your website.
+  # Configuration for indexing can be adjusted in i18n folder per language.
+  BookSearch = false
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
+  BookServiceWorker = false
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
+  # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
+  # Theme will print warning if page referenced in markdown does not exists.
+  BookPortableLinks = false
+
+  #
+  # Quartz configuration - data
+  #
+
+  # Search
+  [params.search]
+    enableSemanticSearch = false
+    operandApiKey = "REPLACE-WITH-YOUR-OPERAND-API-KEY"
+    operandIndexId = "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
+
+  # Footer links
+  [[params.links]]
+    link_name = "Website"
+    link = "https://cedricchee.com"
+
+  [[params.links]]
+    link_name = "GitHub"
+    link = "https://github.com/cedrickchee/amethyst"
+
+  [[params.links]]
+    link_name = "Twitter"
+    link = "https://twitter.com/cedric_chee"
