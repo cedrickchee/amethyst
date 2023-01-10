@@ -1,87 +1,65 @@
 // Replace this with your own font imports!
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
+// keep the previous font.
+// @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap');
 
 :root {
-  --font-body: "PP Mori", "Source Sans Pro", sans-serif;
-  --font-header: "PP Mori", "Source Sans Pro", sans-serif;
-  --font-mono: "PP Fraktion Mono", "Fira Code", monospace;
+  --font-body: "Inter", sans-serif; //"Source Sans Pro";
+  --font-header: "JetBrains Mono", "Inter", monospace; //"Source Sans Pro";
+  --font-mono: "JetBrains Mono", monospace; // "Fira Code"
 }
 
+/* inter-regular - latin */
 @font-face {
-  font-family: "PP Mori";
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: normal;
-  src: url('fonts/PPMori-SemiBold.woff2');
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('fonts/inter-regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* inter-semibold - latin */
 @font-face {
-  font-family: "PP Mori";
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: lighter;
-  src: url('fonts/PPMori-Book.woff2');
+  font-weight: 600;
+  font-display: swap;
+  src: local(''),
+       url('fonts/inter-semibold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* inter-bold - latin */
 @font-face {
-  font-family: "PP Mori";
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: bold;
-  src: url('fonts/PPMori-SemiBold.woff2');
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('fonts/inter-bold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* jetbrains-mono-regular - latin */
 @font-face {
-  font-family: "PP Mori";
+  font-family: 'JetBrains Mono';
   font-style: normal;
-  font-weight: 1000;
-  src: url('fonts/PPMori-ExtraBold.woff2');
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('fonts/jetbrains-mono-regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* jetbrains-mono-bold - latin */
 @font-face {
-  font-family: "PP Mori";
-  font-style: italic;
-  font-weight: normal;
-  src: url('fonts/PPMori-RegularItalic.woff2');
-}
-
-@font-face {
-  font-family: "PP Mori";
-  font-style: italic;
-  font-weight: bold;
-  src: url('fonts/PPMori-SemiBoldItalic.woff2');
-}
-
-
-
-@font-face {
-  font-family: "PP Fraktion Mono";
+  font-family: 'JetBrains Mono';
   font-style: normal;
-  font-weight: normal;
-  src: url('fonts/PPFraktionMono-Regular.woff2');
-}
-
-@font-face {
-  font-family: "PP Fraktion Mono";
-  font-style: normal;
-  font-weight: lighter;
-  src: url('fonts/PPFraktionMono-Bold.woff2');
-}
-
-@font-face {
-  font-family: "PP Fraktion Mono";
-  font-style: normal;
-  font-weight: bold;
-  src: url('fonts/PPFraktionMono-Bold.woff2');
-}
-
-@font-face {
-  font-family: "PP Fraktion Mono";
-  font-style: italic;
-  font-weight: normal;
-  src: url('fonts/PPFraktionMono-RegularItalic.woff2');
-}
-
-@font-face {
-  font-family: "PP Fraktion Mono";
-  font-style: italic;
-  font-weight: bold;
-  src: url('fonts/PPFraktionMono-BoldItalic.woff2');
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('fonts/jetbrains-mono-bold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
