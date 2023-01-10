@@ -4,34 +4,34 @@
     --light: #faf8f8;
     --dark: #141021;
     --secondary: #7c00ce;
-    --tertiary: #ff48d4;
+    --tertiary: #7838F8; // #ff48d4
     --visited: #afbfc9;
-    --primary: #f28482;
+    --primary: #f04d45; // #f28482
     --gray: #3f3f3f;
     --lightgray: #f0f0f0;
     --outlinegray: #dadada;
     --highlighted: #8446ff88; // original value: #f5dfaf88
     // Variables for hugo-book
     --header: #bca1ff;
-    --title: rgb(55, 0, 255);
+    --title: rgb(120, 56, 248); // rgb(55, 0, 255)
     --scrollbar: gray;
     --scrollbar-track: #DDD;
 }
 
 [saved-theme="dark"] {
-    --light: #1e1e21 !important;
+    --light: #1D212C !important; // #1e1e21
     --dark: #f7f2fa !important;
-    --secondary: #b866ff !important;
+    --secondary: #615eff !important; // #b866ff
     --visited: #d199ff !important;
-    --tertiary: #92a8ff !important;
-    --primary: #f58382 !important;
+    --tertiary: #59ff4d !important; // #92a8ff
+    --primary: #ae81ff !important; // #f58382
     --gray: #d4d4d4 !important;
     --lightgray: #292633 !important;
     --outlinegray: #343434 !important;
     --highlighted: #574010;
     // Variables for hugo-book
-    --header: #7838f8;
-    --title: rgb(253, 116, 253);
+    --header: #262B39; // #7838f8
+    --title: rgb(120, 56, 248); // rgb(253, 116, 253);
     --scrollbar: rgb(177, 177, 177);
     --scrollbar-track: rgb(51, 51, 51);
 }
