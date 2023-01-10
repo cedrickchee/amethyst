@@ -6,7 +6,7 @@
     <h1 class="title">{{ partial "docs/title.html" . }}</h1>
     <p class="meta">
       {{ i18n "last_updated" }} {{ partial "quartz/date-fmt" .}} 
-        {{ partial "quartz/github" . }}
+      - {{ partial "quartz/github" . }}
     </p>
     <ul class="tags">
       {{ range (.GetTerms "tags") }}
