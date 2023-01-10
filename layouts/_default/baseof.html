@@ -72,6 +72,22 @@
 {{ define "main" }}
   <article class="markdown">
     <h1 class="title">{{ partial "docs/title.html" . }}</h1>
+    <p class="meta">
+      {{ i18n "last_updated" }} {{ partial "quartz/date-fmt" .}} 
+        {{ partial "quartz/github" . }}
+    </p>
+    <ul class="tags">
+      {{ range (.GetTerms "tags") }}
+      <li><a href="{{ .Permalink }}">
+      {{if (eq $.Site.Language.Lang "en")}}
+        {{ .LinkTitle | humanize }}
+      {{else}}
+        {{ .LinkTitle }}
+      {{end}}
+        </a>
+        </li>
+      {{ end }}
+    </ul>
     {{partial "quartz/textprocessing" . }}
     {{if $.Site.Params.enableRecentNotes}}
       {{partial "quartz/recent" . }}
