@@ -12,6 +12,17 @@
   end }}
 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:image" content="https://garden.cedricchee.com/garden-cedricchee-com.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:width" content="1200">
+<meta property="og:height" content="630">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@cedric_chee" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:description" content="{{if .IsHome}}{{$data.description}}{{else}}{{.Summary}}{{end}}" />
+<meta name="twitter:image" content="https://garden.cedricchee.com/garden-cedricchee-com.jpg">
 
 <!-- HTML Favicon -->
 {{ $favicon := $data.favicon  | default $.Site.Params.favicon | default (slice (dict "rel" "shortcut icon" "type" "image/png" "href" "favicon.png")) }}
@@ -41,23 +52,22 @@
 {{$lightSyntax := resources.Get "quartz/styles/_light_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify  }}
 <link href="{{$lightSyntax.Permalink}}" rel="stylesheet" id="theme-link">
 
-  <!-- Base scripts -->
-{{partial "quartz/katex" .}}
-  
-{{partial "quartz/mermaid" .}}
+<!-- Base scripts -->
 {{$scripts := (slice "quartz/js/darkmode.js" "quartz/js/util.js")}}
 {{range $scripts}}
 {{$scriptname := .}}
 {{ $s := resources.Get $scriptname | resources.ExecuteAsTemplate $scriptname . | resources.Fingerprint "md5" | resources.Minify }}
 <script src="{{$s.Permalink}}"></script>
 {{end}}
-
+{{partial "quartz/katex" .}}
+  
+{{partial "quartz/mermaid" .}}
 
 <script async src="https://unpkg.com/@floating-ui/core@0.7.3"></script>
 <script async src="https://unpkg.com/@floating-ui/dom@0.5.4"></script>
 {{ $popover := resources.Get "quartz/js/popover.js" | resources.Fingerprint "md5" |
 resources.Minify }}
-<script src="{{$popover.Permalink}}"></script>
+<script async src="{{$popover.Permalink}}"></script>
 
 <!-- Optional scripts -->
 {{ if $data.enableCodeBlockTitle | default $.Site.Params.enableCallouts }}
