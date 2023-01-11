@@ -1,4 +1,5 @@
 ---
+weight: 6
 bookCollapseSection: true
-bookFlatSection: false
+title: "Gaming"
 ---

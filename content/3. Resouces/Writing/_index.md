@@ -1,4 +1,5 @@
 ---
+weight: 10
 bookCollapseSection: true
-bookFlatSection: false
+title: "Writing"
 ---

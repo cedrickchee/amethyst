@@ -1,4 +1,5 @@
 ---
+weight: 1
 bookCollapseSection: true
-bookFlatSection: false
+title: "Obsidan Theme"
 ---

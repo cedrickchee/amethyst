@@ -1,4 +1,5 @@
 ---
+weight: 2
 bookCollapseSection: true
-bookFlatSection: false
+title: "1-Projects"
 ---

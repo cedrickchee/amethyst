@@ -1,5 +1,6 @@
 ---
 title: "Computer Architecture"
+date: 2022-05-09
 ---
 
 Computer Architecture — sometimes called "computer systems" or "computer

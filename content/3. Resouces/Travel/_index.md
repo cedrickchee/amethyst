@@ -1,4 +1,5 @@
 ---
+weight: 9
 bookCollapseSection: true
-bookFlatSection: false
+title: "Travel"
 ---

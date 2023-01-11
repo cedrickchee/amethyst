@@ -1,4 +1,5 @@
 ---
+weight: 4
 bookCollapseSection: true
-bookFlatSection: false
+title: "3-Resources"
 ---

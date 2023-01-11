@@ -2,6 +2,7 @@
 weight: 1
 bookCollapseSection: true
 title: "Example Site"
+bookHidden: true
 ---
 
 # Introduction
