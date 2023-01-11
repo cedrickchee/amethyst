@@ -36,10 +36,6 @@ paginate = 10
   #   lineNos = true
   #   lineNumbersInTable = true
   #   style = "dracula"
-  # Quartz specific
-  # [frontmatter]
-  #   lastmod = ["lastmod", ":git", "date", "publishDate"]
-  #   publishDate = ["publishDate", "date"]
 
 #
 # Book configuration
@@ -49,8 +45,16 @@ paginate = 10
 disablePathToLower = true
 
 # (Optional) Set this to true to enable 'Last Modified by' date and git author
-#  information on 'doc' type pages.
+# information on 'doc' type pages.
+# Learn more in Hugo Docs: https://gohugo.io/getting-started/configuration/#enablegitinfo
 enableGitInfo = true
+
+# Configure front matter.
+# Last modified date with Hugo: https://www.andrewjstevens.com/posts/2021/03/last-modified-date-with-hugo/
+# Learn more in Hugo Docs: https://gohugo.io/getting-started/configuration/#configure-front-matter
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
+  publishDate = ["publishDate", "date"]
 
 # Multi-lingual mode config
 # There are different options to translate files
