@@ -53,8 +53,8 @@ enableGitInfo = true
 # Last modified date with Hugo: https://www.andrewjstevens.com/posts/2021/03/last-modified-date-with-hugo/
 # Learn more in Hugo Docs: https://gohugo.io/getting-started/configuration/#configure-front-matter
 [frontmatter]
+  date = ["date", "publishDate", "lastmod"]
   lastmod = ["lastmod", ":git", "date", "publishDate"]
-  publishDate = ["publishDate", "date"]
 
 # Multi-lingual mode config
 # There are different options to translate files
