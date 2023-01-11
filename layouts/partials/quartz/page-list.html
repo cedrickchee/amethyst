@@ -3,7 +3,7 @@
     <li class="section-li">
         <div class="section">
             <p class="meta">
-                {{partial "quartz/date-fmt.html" .}}
+                {{partial "quartz/date-fmt.html" (dict "context" . "showlabel" false "islist" true)}}
             </p>
             <div class="desc">
               <h3><a href="{{ .Permalink }}" class="internal-link" data-src="{{ .RelPermalink }}">{{- .Title -}}</a></h3>

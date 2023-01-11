@@ -1,7 +1,20 @@
-{{if .Date}}
-{{.Date.Format "Jan 2, 2006"}}
-{{else if .Lastmod}}
-{{.Lastmod.Format "Jan 2, 2006"}}
-{{else}}
-Unknown
+{{if and (.context.Date) (not .islist)}}
+  {{if .showlabel}}
+    {{ i18n "published" }}
+  {{end}}
+  {{.context.Date.Format "Jan 2, 2006"}},
+{{end}}
+
+{{if .context.Lastmod}}
+  {{if .showlabel}}
+    {{ i18n "last_updated" }}
+  {{end}}
+  {{.context.Lastmod.Format "Jan 2, 2006"}}
+{{end}}
+
+{{if and (not .context.Date) (not .context.Lastmod)}}
+  {{if .showlabel}}
+    {{ i18n "last_updated" }}
+  {{end}}
+  Unknown
 {{end}}
