@@ -22,8 +22,11 @@
 - id: all_posts
   translation: "All {{.Title}}"
 
+- id: published
+  translation: "Published:"
+
 - id: last_updated
-  translation: "Last updated"
+  translation: "Last updated:"
 
 - id: notes_count
   translation: "notes with this tag"
