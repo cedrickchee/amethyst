@@ -29,12 +29,7 @@
   {{ $ancestor := .Page.IsAncestor .CurrentPage }}
 
   {{ if .Page.Params.BookCollapseSection }}
-    <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }} />
-    <label for="section-{{ md5 .Page }}" class="flex justify-between">
-      <a {{ if .Page.Content }}href="{{ .Page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
-        {{- partial "docs/title" .Page -}}
-      </a>
-    </label>
+    {{ template "collapsed" . }}
   {{ else if .Page.Params.BookHref }}
     <a href="{{ .Page.Params.BookHref }}" class="{{ if $current }}active{{ end }}" target="_blank" rel="noopener">
       {{- partial "docs/title" .Page -}}
@@ -44,6 +39,19 @@
       {{- partial "docs/title" .Page -}}
     </a>
   {{ else }}
-    <span class="book-menu-title">{{- partial "docs/title" .Page -}}</span>
+    {{/* Collapsed menu by default. Previously, the menu was expanded. */}}
+    {{ template "collapsed" . }} {{/* <span class="book-menu-title">{{- partial "docs/title" .Page -}}</span> */}}
   {{ end }}
+{{ end }}
+
+{{ define "collapsed" }}
+  {{ $current := eq .CurrentPage .Page }}
+  {{ $ancestor := .Page.IsAncestor .CurrentPage }}
+
+  <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }} />
+  <label for="section-{{ md5 .Page }}" class="flex justify-between">
+    <a {{ if .Page.Content }}href="{{ .Page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
+      {{- partial "docs/title" .Page -}}
+    </a>
+  </label>
 {{ end }}
