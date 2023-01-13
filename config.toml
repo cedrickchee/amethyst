@@ -125,7 +125,7 @@ enableGitInfo = true
   # that links to github
   enableGitHubEdit = true # default is false
   # Link to your Github repo
-  GitHubLink = "https://github.com/cedrickchee/amethyst"
+  GitHubLink = "https://github.com/cedrickchee/amethyst/tree/main/content"
 
   # whether to render mermaid diagrams
   enableMermaid = true
