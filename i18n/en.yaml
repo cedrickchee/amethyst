@@ -80,4 +80,4 @@
   translation: "Table of Contents"
 
 - id: copyright
-  translation: "Made with <a href=\"https://github.com/64bitpandas/amethyst\">Amethyst</a>, © {{ .year }} {{ .name }}"
+  translation: "Copyright {{ .year }} {{ .name }}"
