@@ -1,9 +1,13 @@
-# Amethyst Hugo Theme
+# Digital Garden
 
 [![Hugo](https://img.shields.io/badge/hugo-0.96-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Amethyst combines the navigational features of [hugo-book](https://github.com/alex-shpak/hugo-book) with the Obsidian integrations of [Quartz](https://github.com/jackyzha0/quartz) to provide a hassle-free place to store and host personal notes or documentation.
+I build my digital garden using [Amethyst](https://github.com/64bitpandas/amethyst).
+
+Amethyst is an Obsidian-compatible notes theme for Hugo.
+
+Amethyst combines the navigational features of [Hugo Book](https://github.com/alex-shpak/hugo-book) with the Obsidian integrations of [Quartz](https://github.com/jackyzha0/quartz) to provide a hassle-free place to store and host personal notes or documentation.
 
 ![amethyst screenshot](content/setup/images/amethyst-screenshot.png)
 
