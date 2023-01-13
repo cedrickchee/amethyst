@@ -3,14 +3,14 @@
 
 name = "Amethyst"
 license = "MIT"
-licenselink = "https://github.com/64bitpandas/amethyst/blob/main/LICENSE"
+licenselink = "https://github.com/cedrickchee/amethyst/blob/main/LICENSE"
 description = "Obsidian-compatible Hugo theme for personal notes"
-homepage = "https://github.com/64bitpandas/amethyst"
-demosite = "https://notes.bencuan.me"
+homepage = "https://github.com/cedrickchee/amethyst"
+demosite = "https://amethyst.cedricchee.com"
 tags = ["responsive", "notes", "obsidian", "obsidian-md", "latex", "documentation", "docs", "flexbox", "search", "mobile", "multilingual"]
 features = []
 min_version = "0.93"
 
 [author]
-  name = "Ben Cuan"
-  homepage = "https://bencuan.me"
+  name = "Cedric Chee"
+  homepage = "https://cedricchee.com"
