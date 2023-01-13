@@ -3,11 +3,12 @@
 [![Hugo](https://img.shields.io/badge/hugo-0.96-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Amethyst combines the navigational features of [hugo-book](https://github.com/alex-shpak/hugo-book) with the Obsidian integrations of [quartz](https://github.com/jackyzha0/quartz) to provide a hassle-free place to store and host personal notes or documentation.
+Amethyst combines the navigational features of [hugo-book](https://github.com/alex-shpak/hugo-book) with the Obsidian integrations of [Quartz](https://github.com/jackyzha0/quartz) to provide a hassle-free place to store and host personal notes or documentation.
 
 ![amethyst screenshot](content/setup/images/amethyst-screenshot.png)
 
 ## Features
+
 - Most of the features of the original themes (Quartz and Book)
 - Mobile-friendly
 - Multi-language support
@@ -19,7 +20,8 @@ Amethyst combines the navigational features of [hugo-book](https://github.com/al
 - Tab cards for practice problems
 
 ## Documentation
-If you just want to use Amethyst for your own notes hosting, go to [amethyst.bencuan.me](https://amethyst.bencuan.me) for a demo and documentation on how to use it.
+
+Go to [amethyst.cedricchee.com](https://amethyst.cedricchee.com) for a demo and documentation on how to use it.
 
 Keep reading if you want to help develop Amethyst, or make changes to the code base for your own needs.
 
@@ -31,9 +33,9 @@ Keep reading if you want to help develop Amethyst, or make changes to the code b
 - **Hugo-obsidian:** Run `go install github.com/jackyzha0/hugo-obsidian@latest`.
   - If you're getting a `command not found` error, [ensure that your PATH is configured properly so that binaries in the GOPATH can be executed](https://stackoverflow.com/questions/21001387/how-do-i-set-the-gopath-environment-variable-on-ubuntu-what-file-must-i-edit).
 
-## Live Server
+## Development
 
-Start the live server using `make serve`. Content will be served to `localhost:1313` by default.
+Start the development server with live reload using `make serve`. Content will be served to `localhost:1313` by default.
 
 The server will need to be restarted to preview changes to navigation (internal links and sidebar menu).
 
@@ -41,9 +43,9 @@ The server will need to be restarted to preview changes to navigation (internal 
 
 ### Site Configuration
 
-Most configuration can be done by creating a `config.yaml` file in the root directory and editing the parameters. You can start by copying the example [here](https://github.com/64bitpandas/amethyst/blob/main/config.yaml).
+Most configuration can be done by creating a `config.yaml` file in the root directory and editing the parameters. You can start by copying the example [here](https://github.com/cedrickchee/amethyst/blob/main/config.yaml).
 
-Graph-specific configuration can be added to `data/graphConfig.yaml`. (Example [here](https://github.com/64bitpandas/amethyst/blob/main/data/graphConfig.yaml))
+Graph-specific configuration can be added to `data/graphConfig.yaml`. (Example [here](https://github.com/cedrickchee/amethyst/blob/main/data/graphConfig.yaml))
 
 
 ### Multi-Language Support
